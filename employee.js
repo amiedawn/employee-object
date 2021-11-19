@@ -33,9 +33,9 @@ let srMgr = {
 function calcSal(emp) {
   let totSal = emp.baseSal + emp.extraHrs * 50;
   console.log(totSal);
+  return totSal;
 };
 
-calcSal(consultant);
 let consultantSal = calcSal(consultant);
 let mgrSal = calcSal(mgr);
 let srMgrSal = calcSal(srMgr);
@@ -44,7 +44,6 @@ console.log(consultant.empName + " has made $" + consultantSal + " and has worke
 console.log(mgr.empName + " has made $" + mgrSal + " and has worked " + mgr.extraHrs + " extra hours.");
 console.log(srMgr.empName + " has made $" + srMgrSal + " and has worked " + srMgr.extraHrs + " extra hours.");
 
-// calcSal(mgr);
-// calcSal(srMgr);
+
 
 
